@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scientific Calculator</title>
+    <script src="calfun.js"></script>
+    <style>
+        body {
+             background: linear-gradient(to bottom right, #f5f5dc, #e0e0e0);
+        font-family: 'Segoe UI', sans-serif;
+        }
+        .box {
+            padding: 10px;
+            height: 430px;
+            width: 440px;
+            margin: 180px auto 0;
+            background-color: rgb(34, 33, 33);
+        }
+        .button, .button1, .button2, .button3 {
+            width: 100%;
+            height: 70%;
+            border-radius: 2px;
+            font-size: 25px;
+            border: solid black 0.5px;
+            outline: none;
+        }
+        .button { background-color: rgb(110, 109, 109); color: black; }
+        .button1 { background-color: rgb(13, 111, 249); color: white; }
+        .button2 { background-color: rgb(40, 41, 42); color: white; }
+        .button3 { background-color: rgb(240, 59, 89); color: white; }
+        .display-box {
+            background-color: white;
+            color: black;
+            width: 100%;
+            height: 105%;
+            border: solid black 0.5px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body id="body">
+    <table class="box">
+        <tr><td colspan="6"><input type="text" id="result" class="display-box"></td></tr>
+        <tr>
+            <td><input class="button2" type="button" value="Binary" onclick="binary()"></td>
+            <td><input class="button2" type="button" value="sin" onclick="sin()"></td>
+            <td><input class="button1" type="button" value="C" onclick="Screen()"></td>
+            <td><input class="button2" type="button" value="(" onclick="display('(')"></td>
+            <td><input class="button2" type="button" value=")" onclick="display(')')"></td>
+            <td><input class="button2" type="button" value="S" onclick="location.href='basicpage.html'"></td>
+        </tr>
+        <tr>
+            <td><input class="button2" type="button" value="Octal" onclick="octal()"></td>
+            <td><input class="button2" type="button" value="cos" onclick="cos()"></td>
+            <td><input class="button" type="button" value="7" onclick="display('7')"></td>
+            <td><input class="button" type="button" value="8" onclick="display('8')"></td>
+            <td><input class="button" type="button" value="9" onclick="display('9')"></td>
+            <td><input class="button2" type="button" value="/" onclick="display('/')"></td>
+        </tr>
+        <tr>
+            <td><input class="button2" type="button" value="Hex" onclick="hexa()"></td>
+            <td><input class="button2" type="button" value="tan" onclick="tan()"></td>
+            <td><input class="button" type="button" value="4" onclick="display('4')"></td>
+            <td><input class="button" type="button" value="5" onclick="display('5')"></td>
+            <td><input class="button" type="button" value="6" onclick="display('6')"></td>
+            <td><input class="button2" type="button" value="-" onclick="display('-')"></td>
+        </tr>
+        <tr>
+            <td><input class="button2" type="button" value="log" onclick="log()"></td>
+            <td><input class="button2" type="button" value="pi" onclick="pi()"></td>
+            <td><input class="button" type="button" value="1" onclick="display('1')"></td>
+            <td><input class="button" type="button" value="2" onclick="display('2')"></td>
+            <td><input class="button" type="button" value="3" onclick="display('3')"></td>
+            <td><input class="button2" type="button" value="+" onclick="display('+')"></td>
+        </tr>
+        <tr>
+            <td><input class="button2" type="button" value="√" onclick="sq()"></td>
+            <td><input class="button2" type="button" value="%" onclick="percentage()"></td>
+            <td><input class="button" type="button" value="." onclick="display('.')"></td>
+            <td><input class="button" type="button" value="0" onclick="display('0')"></td>
+            <td><input class="button3" type="button" value="=" onclick="calculate()"></td>
+            <td><input class="button2" type="button" value="*" onclick="display('*')"></td>
+        </tr>
+    </table>
+</body>
+</html>
