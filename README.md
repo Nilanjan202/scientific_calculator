@@ -50,12 +50,6 @@ scientific_calculator/
 
 ---
 
-## 🌐 Live Demo
-
-> *(Optional)* Host with GitHub Pages and paste your live link here.
-
----
-
 ## 👨‍💻 Author
 
 - **Nilanjan Sen**  
